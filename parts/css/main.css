@@ -73,7 +73,7 @@ body main header #meWrap #mePhoto {
 	margin: auto;
 	border: 1px solid silver;
 	border-radius: 50%;
-	background: rgba(0,0,0,0) url("parts/img/me.jpg") no-repeat scroll center -25px / cover;
+	background: rgba(0,0,0,0) url("/parts/img/me.jpg") no-repeat scroll center -25px / cover;
 	box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 16px 6px, rgba(0, 0, 0, 0.2) 0px 1px 6px 0px;
 
 
