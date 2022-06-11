@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+@media (max-width: 1169px) {
+	body header {
+		height: 0px;
+		height: 100%;
+	}
+	body #burgerMenu {
+
+		width: 48px;
+		height: 48px;
+		background: rgba(255,25,2,.3) url("/parts/img/burgerOver.png");
+		z-index: 2;
+		position: fixed;
+		top: 0px;
+		right: 0px;
+	}
+	body header #headerOver {
+		height: 0;
+	}
+	body main header {
+		width: 100%;
+		margin: 0;
+		height: 100%;
+	}
+	body main header #meWrap {
+		width: 100%;
+		height: auto;
+		float: none;
+		padding: 30px 0 0;
+
+
+	}
+	body main header #aboutMeWrap {
+		float: none;
+		width: 100%;
+		padding: 10px;
+		height: unset;
+	}
+	body main header #aboutMeWrap h1 {
+		margin: 0;
+		padding: 0;
+	}
+
+	body main header nav {
+		text-align: left;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		box-sizing: border-box;
+		z-index: 1;
+		display: none;
+	}
+
+	body main header nav>a {
+		display: block;
+		padding: 3px;
+	}
+	body main header nav>a:before {
+		content: "";
+	}
+	body main header nav a.hidden {
+		display: block;
+	}
+
+	body main header nav #flagsWrap {
+		width: 100%;
+		text-align: center;
+	}
+	body main header nav #flagsWrap div {
+		width: 32px;
+		height: 20px;
+	}
+	body main header nav #flagsWrap .usGbFlag {
+		background-position: -235px 0;
+	}
+	body main section {
+		width: 100%;
+		margin-top: 8px;
+	}
+	body main section h2 {
+		margin: 18px 0;
+	}
+	body main section div.boxes {
+		height: auto;
+	}
+	body main section div.boxes .box {
+		width: 100%;
+		position: static;
+		padding: 3px 0;
+
+	}
+
+	body main section div.default {
+		padding: 10px;
+	}
+	body main section div .progressbarWrapper {
+		width: 100%;
+		float: none;
+	}
+
+	body main .cd-timeline__content p, body main .cd-timeline__read-more, body main .cd-timeline__date {
+		font-size: 14px;
+	}
+	body main .cd-timeline h3 {
+		background: #E5E5E5;
+		text-align: center;
+		padding: 7px 5px;
+
+	}
+
+
+	body main section.contact .inputsWrap {
+		width: 100%;
+		float: none;
+	}
+	body main section.contact textarea {
+		width: 100%;
+		border-left-width: 0;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		float: none;
+	}
+	body main section.contact button {
+		position: static;
+		left: 0;
+	}
+
+	body footer {
+		padding: 10px;
+		height: auto;
+	}
+
+}

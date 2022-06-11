@@ -1,0 +1,445 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@font-face {
+    font-family: icons;
+    src: url("../fonts/modernpics.otf");
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+a {
+	text-decoration: none;
+	border: 0;
+	color: #FFF;
+}
+
+body {
+	color: #888888 !important;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+	padding: 0;
+    margin: 0;
+
+
+    width: 100%;
+    background: #E6E6E6;
+}
+
+body header {
+	width: 100%;
+	background-image: url("/parts/img/code2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	background-position: fixed;
+	background-attachment: fixed;
+	background-position: bottom;
+}
+
+body header #headerOver {
+	background-color: rgba(20, 20, 20, .5);
+	background-size: cover;
+	height: 400px;
+	width: 100%;
+}
+body #burgerMenu {
+	display: none;
+}
+
+body main header {
+	width: 67%;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: -250px;
+	background: #fff;
+}
+body main header #meWrap {
+	width: 40%;
+	height: 300px;
+	padding: 70px 0;
+	float: left;
+	box-sizing: border-box;
+}
+body main header #meWrap #mePhoto {
+	position: relative;
+	width: 190px;
+	height: 190px;
+	margin: auto;
+	border: 1px solid silver;
+	border-radius: 50%;
+	background: rgba(0,0,0,0) url("/parts/img/me.jpg") no-repeat scroll center -25px / cover;
+	box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 16px 6px, rgba(0, 0, 0, 0.2) 0px 1px 6px 0px;
+
+
+}
+body main header #meWrap #meName {
+	color: #FF1902;
+	font-family: 'Catamaran', 'Open Sans', 'Sans Serif';
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin: 25px 0px;
+	width: 100%;
+	text-align: center;
+}
+body main header #aboutMeWrap {
+	width: 60%;
+	float: left;
+
+	height: 100%;
+	box-sizing: border-box;
+	padding: 30px;
+}
+body main header #aboutMeWrap h1 {
+	position: relative;
+	font-family: 'Catamaran', 'Open Sans', 'Sans Serif';
+	margin-top: 15px;
+}
+
+body main header #aboutMeWrap h1:after {
+	display: inline-block;
+	content: '';
+	position: absolute;
+	bottom: 6px;
+	left: -10px;
+	width: 80px;
+	height: 4px;
+	background: #FF1902;
+	border-radius: 30px;
+
+}
+body main header #aboutMeWrap p {
+	margin: 10px 0 10px 0;
+}
+body main header #aboutMeWrap table td {
+	padding: 0 10px;
+}
+body main header nav {
+	clear: both;
+	background: #FF1902;
+	padding: 20px 30px;
+	text-align: center;
+	color: #FFF;
+	font-family: 'Catamaran', 'Open Sans', 'Sans Serif';
+	font-size: 16px;
+}
+
+body main header nav>a:hover {
+	color: #000;
+}
+
+body main header nav>a:before {
+	color: #fff;
+	content: "| ";
+
+}
+body main header nav>a:nth-child(2):before {
+	content: "";
+}
+body main header nav #flagsWrap {
+	width: 112px;
+	height: 35px;
+	float: right;
+	padding: 1px;
+	box-sizing: border-box;
+}
+body main header nav #flagsWrap div {
+	width: 26px;
+	height: 16px;
+	display: inline-block;
+	background-size: cover;
+	background-color: none;
+	margin: 2px;
+}
+body main header nav #flagsWrap div:before {
+	width: 100%;
+	height: 100%;
+	background: orange;
+}
+body main header nav #flagsWrap .czFlag {
+	background-image: url("/parts/img/flags.png");
+
+	background-position: 0 0;
+
+}
+body main header nav #flagsWrap .usGbFlag {
+	background-image: url("/parts/img/flags.png");
+	background-position: -188px 0px;
+
+}
+body main header nav a.hidden {
+	display: none;
+}
+
+body main section {
+	width: 67%;
+	margin: 0 auto;
+	margin-top: 100px;
+
+}
+body main section h2 {
+	position: relative;
+	font-family: 'Catamaran', 'Open Sans', 'Sans Serif';
+	margin-bottom: 40px;
+	width: 100%;
+	text-align: center;
+	background: #E5E5E5;
+	line-height: 36px;
+	font-size: 28px;
+font-weight: 700;
+letter-spacing: 5px;
+color: #555555;
+text-transform: uppercase;
+}
+body main section div {
+
+}
+body main section div.default {
+	background: #fff;
+	padding: 55px;
+}
+body main section div .progressbarWrapper {
+	width: 48%;
+	float: left;
+	padding: 10px 1%;
+
+}
+body main section div .progressbarWrapper .skillText span {
+	color: green;
+	float: right;
+}
+body main section div .progressbarWrapper .progressbar {
+	position: relative;
+	overflow: hidden;
+	height: 5px;
+	background: #e6e6e6;
+	width: 100%;
+	box-sizing: border-box;
+}
+body main section div .progressbarWrapper .progressbar span {
+	width: 0;
+	transition: width 1.5s ease 0s;
+	box-sizing: border-box;
+	background: #FF1902;
+	height: 10px;
+	display: block;
+}
+body main section div.boxes {
+	position: relative;
+	width: 100%;
+	height: 240px;
+}
+body main section div.boxes .box {
+	width: 32%;
+	background: #fff;
+	display: block;
+	position: absolute;
+	text-align: center;
+	height: 130px;
+
+	font-size: 22px;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+body main section div.boxes .box:nth-child(1) {
+	top: 0;
+	left: 0;
+
+}
+body main section div.boxes .box:nth-child(2) {
+	top: 0;
+	left: 34%;
+}
+body main section div.boxes .box:nth-child(3) {
+	top: 0;
+	right: 0;
+}
+body main section div.boxes .box:nth-child(4) {
+	top: 150px;
+	left: 0;
+}
+
+body main section div.boxes .box:nth-child(5) {
+	top: 150px;
+	left: 34%;
+}
+body main section div.boxes .box:nth-child(6) {
+	top: 150px;
+	right: 0;
+}
+
+
+body main section div.boxes div.box>div:before {
+	display: block;
+	content: '';
+	width: 30px;
+	height: 30px;
+	background-image: url("/parts/img/spriteIcons.png");
+	background-size: 64px;
+	margin: 15px auto;
+}
+
+body main section div.boxes div.box>div:after {
+	display: block;
+	content: '';
+	margin: 18px auto 0;
+	width: 50px;
+	height: 3px;
+	background: red;
+	background-color: red;
+	border-radius: 30px;
+
+}
+body main section div.boxes div.box>div.backend:before {
+	background-position: -1px -65px;
+}
+body main section div.boxes div.box>div.hosting:before {
+	background-position: -33px -33px;
+}
+
+body main section div.boxes div.box>div.linux:before {
+	background-position: -1px -1px;
+}
+body main section div.boxes div.box>div.bash:before {
+	background-position: -1px -160px;
+}
+body main section div.boxes div.box>div.consult:before {
+	background-position: -1px -128px;
+}
+body main section div.boxes div.box>div.frontend:before {
+	background-position: -1px -96px;
+}
+body main section div.boxes div.box>p {
+	display: none;
+	margin: 17px;
+	font-family: 'Open Sans', 'Sans Serif';
+	font-size: 13px;
+	line-height: 1.4;
+	color: #666666;
+	font-weight: 400;
+	height: 67%;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-align: center;
+}
+body main section.contact .inputsWrap {
+	width: 45%;
+
+	float: left;
+	margin: 0 10px 0 0;
+}
+body main section.contact .inputsWrap input, body main section.contact textarea {
+	font-size: 15px;
+	line-height: 1.3;
+	border-bottom: 2px solid rgba(255 ,25 ,2, 0.15);
+	vertical-align: baseline;
+}
+body main section.contact .inputsWrap input {
+	height: 45px;
+	width: 100%;
+
+
+}
+body main section.contact .inputsWrap input:hover,body main section.contact textarea:hover {
+	background: rgba(255 ,243 ,243, 0.5);
+}
+body main section.contact .inputsWrap input:focus,body main section.contact textarea:focus  {
+	border-color: rgba(255 ,25 ,2, 1);
+}
+body main section.contact {
+	text-align: center;
+}
+
+body main section.contact textarea {
+	margin: 0 0 0 10px;
+	height: 120px;
+	float: right;
+	width: 45%;
+	border-left: 1px solid rgba(255 ,25 ,2, 0.15);
+	padding: 10px;
+	resize: vertical;
+	min-height: 120px;
+	max-height: 300px;
+}
+body main section.contact button {
+	font-family: 'Dosis', 'Open Sans','Sans Serif';
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 10px 20px;
+	letter-spacing: 2px;
+	overflow: hidden;
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
+	background-color: #FF1902;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 20px;
+	clear: both;
+	position: relative;
+	left: 35%;
+	visibility: hidden;
+
+}
+
+body footer {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	margin-top: 100px;
+	padding: 70px;
+	box-sizing: border-box;
+	background: #FF1902;
+	color: #fff;
+	text-align: center;
+}
+body #debug {
+	display: none;
+	width: 400px;
+	height: 80px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: orange;
+}
+
+.g-recaptcha {
+	padding: 10px;
+	display: inline-block;
+}
+#flashMsgWrap {
+	width: 400px;
+	position: fixed;
+    top: 50px;
+    left: 50%;
+    margin-left: -200px;
+    padding: 5px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+.flashMsg {
+    width: 100%;
+    padding: 20px;
+    border: 3px solid red;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+
+}
+.flashMsg.error {
+	background: #fc6d71 none repeat scroll 0 0;
+	border: 3px solid #ff0000;
+	color: #fff;
+}
+.flashMsg.ok {
+	background: #80fc6d none repeat scroll 0 0;
+	border: 3px solid #00ff00;
+	color: #fff;
+}
